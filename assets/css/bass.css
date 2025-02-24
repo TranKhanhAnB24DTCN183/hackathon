@@ -1,0 +1,35 @@
+:root {
+    --heading-color: #111827;
+    --text-color: #4B5563;
+    --bg-color: #FFFFFF;
+    --boder-color: #484848;
+    --primary-font: "Inter", serif;
+    --corner-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Inter", serif;
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+.gird {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 375px) {
+    .gird {
+        padding: 0 10px;
+    }
+}
