@@ -1,4 +1,23 @@
+:root {
+    --heading-color: #111827;
+    --text-color: #4B5563;
+    --bg-color: #FFFFFF;
+    --boder-color: #484848;
+    --primary-font: "Inter", serif;
+    --corner-radius: 12px;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.gird {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 .header{
     height: 68px;
     background-image:var(--bg-color);
@@ -352,80 +371,79 @@ button{
 }
 .footer p {
     margin: 0;
+}
+.header__navbar-item-link-icon{
+    display: none;
 }
 @media screen and (max-width: 375px) {
-    .header__navbar-item-link {
-        display: none; 
+    .gird{
+        width: 100%;
+        min-width:400px;
+        margin: 0 25px;
+    }
+    .header__navbar {
+        align-items: center;
     }
 
-    .header__navbar-item-link-icon {
-        display: block; 
-        font-size: 24px;
-    }
-
-    .hero {
+    .header__navbar-list {
         flex-direction: column;
-        gap: 20px;
+        text-align: center;
+        gap: 10px;
     }
-
-    .hero-text {
-        max-width: 100%;
-        order: 2;
+    .header__navbar-item-link{
+        display: none;
     }
-    
-    .hero-img img {
-        width: 200px;
+    .header__navbar-item-link-icon {
+        display: block;
+    }
+    .hero {
+        width: 400px;
+        flex-direction: column;
+        margin: 0px;
         height: auto;
     }
-
-    .skills-container {
-        padding: 10px;
+    .hero-text{
+        order: 2;
+        width: 350px;
+    }
+    .hero-text h1 {
+        margin-top: 50px;
+        font-size: 20px;
     }
 
-    .project-card {
-        flex-direction: column;
-        width: 100%;
+    .hero-text p {
+        font-size: 16px;
     }
-    .project-image{
-        width: 279px;
-        height: 192px;
+
+    .hero-img img {
+        width: 170px;
+        height: 180px;
     }
+
     .projects {
-        flex-direction: column;
+        padding: 15px;
     }
-    .project-title{
-        margin-top: 20px;
-    }
+
     .project-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-  
-    .project-image img{
+
+    .project-image img {
         width: 100%;
         height: auto;
-        order: 1;
     }
 
     .project-info {
         width: 100%;
         margin: 10px 0;
-        order: 2;
     }
 
-    .tech-stack {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .tech-stack button {
-        padding: 5px 10px;
+    .footer {
+        text-align: center;
         font-size: 12px;
     }
-    .footer {
-        padding: 10px;
-    }
 }
+
 
